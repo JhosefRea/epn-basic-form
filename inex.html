@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <form method="POST">
+        <div class="field-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" value="Goku"
+            class="form-control"
+            />
+        </div>
+        
+        <div class="field-group">      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+            class="form-control"
+            required/>
+        </div>
+        <div class="field-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password"
+            class="form-control"
+            placeholder="Ingresa clave"/>
+
+        </div>
+
+        <div class="field-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" class="form-control" cols="60" rows="6"></textarea>
+        </div>
+
+        <div class="field-group">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Edad" min="18" max="40"/>
+        </div>
+
+        <div class="field-group">
+            <label for="edad">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfonooo"
+            class="form-control"/>
+        </div>
+
+        <DIV class="field-group">
+            <label for="interested_in">Intereses</label>
+            <div></div>
+            <ul>
+                <li class="form-check form-switch">
+                    <input type="checkbox" id="programming" name="instested_in" 
+                    class="form-check-input" value="programming" >
+                    <label for="programming" class="form-check-label">
+                        Programación
+                    </label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="travel" name="instested_in" value="programming" >
+                    <label for="travel">
+                        viajar
+                    </label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="cycling" name="instested_in" value="cycling" >
+                    <label for="cycling">
+                        Bicicletas
+                    </label>
+                </li>
+            </ul>        
+        </DIV>
+
+        <DIV class="field-group">
+            <label for="interested_in">Notificaciones?</label>
+            <div></div>
+            <ul>
+                <li>
+                    <input type="radio" id="notificacions_yes" name="notifications" 
+                    class="form-check-input" value="yes" >
+                    <label for="notificacions_yes" class="form-check-label">
+                        Sí
+                    </label>
+                </li>
+
+                <li>
+                    <input type="radio" id="notificacions_no" name="notifications" value="no" >
+                    <label for="notificacions_no">
+                        No
+                    </label>
+                </li>
+
+            </ul>        
+        </DIV>
+
+        <DIV class="field-group">
+            <input type="file" name="file">
+        </DIV>
+
+        <div class="field-group">
+            <label>Precio:</label>
+            <input type="range" id="price" name="price" min="100" step="50" max="1000"
+            class="form-range" value="8000"/>
+        
+        </div>
+
+        <DIV class="field-group">
+            <label for="list">Selecciona una opcion de la lista</label>
+            
+            <select name="list" id="list" required class="form-select">
+                <option value="">Slecciones una opcion....</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+            </select>
+
+        </DIV>
+
+        
+
+        <div>
+            <button class="btn btn-primary">Enviar</button>
+            <input type="submit" name="nombre" value="Enviar1">
+        </div>
+
+        
+
+    </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
